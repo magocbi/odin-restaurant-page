@@ -31,11 +31,13 @@ body {
 
 /* Header */
 header {
+  width: 100%;
   color: hsl(var(--clr-white));
   display: flex;
   flex-direction: column;
   justify-content: center;
-  min-height: 50vh;
+  min-height: 30vh;
+  padding: 2rem 1rem;
 }
 
 .restaurant-name {
@@ -70,4 +72,37 @@ header {
 .btn-tab:hover,
 .btn-tab:focus-visible {
   transform: scale(1.1);
+}
+
+/* HomePage */
+
+.tab-info {
+  margin: 0 auto 2rem;
+  padding: 4rem 3rem;
+  width: min(75%, 900px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  background-color: hsl(var(--clr-white) / 0.8);
+  border-radius: 10px;
+}
+
+.home-img {
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.home-img img {
+  width: 100%;
+}
+
+.restaurant-info {
+  display: flex;
+  gap: 3rem;
+}
+
+.desc {
+  width: min(60ch, 100%);
+  font-size: 1.2rem;
 }
