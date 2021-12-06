@@ -1,0 +1,73 @@
+:root {
+  --clr-white: 0 0% 100%;
+  --clr-black: 0 0% 0%;
+}
+
+/* Resets */
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+ul {
+  padding: 0;
+  list-style: none;
+}
+
+/* global */
+
+body {
+  background: url('./images/bg-img.jpg') center center fixed;
+  background-color: hsl(0 0% 0% / 0.3);
+  background-size: cover;
+  background-blend-mode: overlay;
+}
+
+/* Header */
+header {
+  color: hsl(var(--clr-white));
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 50vh;
+}
+
+.restaurant-name {
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: auto;
+  margin-top: auto;
+}
+
+.nav ul {
+  font-size: 1.2rem;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.btn-tab {
+  font-size: inherit;
+  background-color: hsl(var(--clr-black) / 0.5);
+  color: hsl(var(--clr-white));
+  border: 2px solid hsl(var(--clr-white) / 0.6);
+  padding: 1em 2em;
+  cursor: pointer;
+}
+
+.btn-tab:hover,
+.btn-tab:focus-visible,
+.btn-tab.selected {
+  border: 2px solid hsl(var(--clr-white) / 1);
+}
+
+.btn-tab:hover,
+.btn-tab:focus-visible {
+  transform: scale(1.1);
+}
