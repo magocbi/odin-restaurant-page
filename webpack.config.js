@@ -7,6 +7,7 @@ module.exports = {
     path: path.resolve(__dirname, 'dist'),
     assetModuleFilename: 'images/[name][hash][ext][query]',
   },
+  devtool: 'inline-source-map',
   module: {
     rules: [
       {
