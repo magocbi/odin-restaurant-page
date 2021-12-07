@@ -4,7 +4,7 @@ module.exports = {
   entry: './src/index.js',
   output: {
     filename: 'main.js',
-    path: path.resolve(__dirname, 'dist'),
+    path: path.resolve(__dirname, 'docs'),
     assetModuleFilename: 'images/[name][hash][ext][query]',
   },
   devtool: 'inline-source-map',
