@@ -2,6 +2,18 @@
 
 A restaurant page
 
+## Links
+
+- [Live](https://magocbi.github.io/odin-restaurant-page/)
+- [Repo](https://github.com/magocbi/odin-restaurant-page)
+
+## Built with
+
+- webpack & es6 modules
+- npm
+- css/html
+- mostly js for elements
+
 ## Sources
 
 - [Dennis Schrader](https://unsplash.com/@dennisschrader)
