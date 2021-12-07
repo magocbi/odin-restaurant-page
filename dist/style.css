@@ -107,6 +107,19 @@ header {
   font-size: 1.2rem;
 }
 
+.schedule {
+  display: flex;
+}
+
+.schedule h2 {
+  padding: 0 0.5em;
+  background-color: hsl(var(--clr-black));
+  color: hsl(var(--clr-white));
+  writing-mode: vertical-lr;
+  transform: rotate(180deg);
+  text-align: center;
+}
+
 /* Menu */
 
 .menu {

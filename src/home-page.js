@@ -21,12 +21,13 @@ function createSchedule(schedule) {
   const scheduleContainer = document.createElement('div');
   scheduleContainer.classList.add('schedule');
   const title = document.createElement('h2');
-  title.textContent = 'HOURS:';
+  title.textContent = 'HOURS';
   const list = document.createElement('ul');
+  list.classList.add('schedule-list');
 
   for (const [day, hours] of Object.entries(schedule)) {
     const item = document.createElement('li');
-    item.textContent = `${day}: hours`;
+    item.textContent = `${day}: ${hours}`;
     list.appendChild(item);
   }
   scheduleContainer.append(title, list);

@@ -9,7 +9,5 @@ function selectTabHandler(e) {
   loadPage(selectedTab, container);
 }
 
-window.addEventListener('DOMContentLoaded', () =>
-  loadPage('contact', container)
-);
+window.addEventListener('DOMContentLoaded', () => loadPage('home', container));
 tabs.forEach((tab) => tab.addEventListener('click', selectTabHandler));
