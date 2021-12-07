@@ -5,6 +5,7 @@ const tabs = document.querySelectorAll('[data-tab]');
 
 function selectTabHandler(e) {
   tabs.forEach((tab) => tab.classList.remove('selected'));
+  e.target.classList.add('selected');
   const selectedTab = e.target.dataset.tab;
   loadPage(selectedTab, container);
 }
