@@ -146,3 +146,21 @@ header {
   height: 100%;
   object-fit: cover;
 }
+
+/* contact list */
+
+.contact-list {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.contact-card {
+  text-align: center;
+  flex: 1 0 200px;
+}
+
+.contact-card .position {
+  text-transform: capitalize;
+}
